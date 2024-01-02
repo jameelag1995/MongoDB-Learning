@@ -1,0 +1,1228 @@
+db.resturants.find()
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: false,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c9d51f3d1ed8080bad02'),
+  name: 'bahri',
+  city: 'umm el fahem',
+  coordinates: [
+    -30,
+    300,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '20.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '10.9.2022',
+      rating: 3.5
+    },
+    {
+      date: '12.8.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    }
+  ]
+}
+db.resturants.find({cuisine: 'mediterranean'})
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c9d51f3d1ed8080bad02'),
+  name: 'bahri',
+  city: 'umm el fahem',
+  coordinates: [
+    -30,
+    300,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '20.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '10.9.2022',
+      rating: 3.5
+    },
+    {
+      date: '12.8.2022',
+      rating: 5
+    }
+  ]
+}
+db.resturants.find({kosher:true})
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c9d51f3d1ed8080bad02'),
+  name: 'bahri',
+  city: 'umm el fahem',
+  coordinates: [
+    -30,
+    300,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '20.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '10.9.2022',
+      rating: 3.5
+    },
+    {
+      date: '12.8.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    }
+  ]
+}
+db.resturants.find({city:["haifa","jaffa"]})
+db.resturants.find({city:"haifa"},{city:"jaffa"})
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  city: 'jaffa'
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  city: 'jaffa'
+}
+db.resturants.find({city:"haifa"})
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: false,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+db.resturants.find({$or:[{city:"haifa"},{city:"jaffa"}]})
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: false,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+
+
+db.resturants.find({coordinates:[-77,564,40.677]})
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: false,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+
+db.resturants.find().sort("city")
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: false,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c9d51f3d1ed8080bad02'),
+  name: 'bahri',
+  city: 'umm el fahem',
+  coordinates: [
+    -30,
+    300,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '20.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '10.9.2022',
+      rating: 3.5
+    },
+    {
+      date: '12.8.2022',
+      rating: 5
+    }
+  ]
+}
+
+
+
+db.resturants.find().sort("name")
+{
+  _id: ObjectId('6593c9d51f3d1ed8080bad02'),
+  name: 'bahri',
+  city: 'umm el fahem',
+  coordinates: [
+    -30,
+    300,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '20.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '10.9.2022',
+      rating: 3.5
+    },
+    {
+      date: '12.8.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: false,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+
+
+db.resturants.updateOne({_id:ObjectId("6593ca281f3d1ed8080bad03")},{$set:{name:"teshreen 2"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.resturants.find({name:"teshreen 2"})
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen 2',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    }
+  ]
+}
+
+
+
+db.resturants.updateOne({_id:ObjectId("6593ca281f3d1ed8080bad03")},{$push:{reviews:{date:"20.12.2023",rating:3.5}}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.resturants.find({name:"teshreen 2"})
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen 2',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    },
+    {
+      date: '20.12.2023',
+      rating: 3.5
+    }
+  ]
+}
+
+
+
+db.resturants.updateMany({},{$set:{kosher:true}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 5,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.resturants.find()
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c9d51f3d1ed8080bad02'),
+  name: 'bahri',
+  city: 'umm el fahem',
+  coordinates: [
+    -30,
+    300,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '20.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '10.9.2022',
+      rating: 3.5
+    },
+    {
+      date: '12.8.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen 2',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    },
+    {
+      date: '20.12.2023',
+      rating: 3.5
+    }
+  ]
+}
+
+
+
+db.resturants.deleteOne({name:"bahri"})
+{
+  acknowledged: true,
+  deletedCount: 1
+}
+db.resturants.find({name:"bahri"})
+db.resturants.find()
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen 2',
+  city: 'nazareth',
+  coordinates: [
+    -50,
+    400,
+    40
+  ],
+  cuisine: 'middle eastrn',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '10.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '15.9.2022',
+      rating: 4.5
+    },
+    {
+      date: '20.8.2022',
+      rating: 5
+    },
+    {
+      date: '20.12.2023',
+      rating: 3.5
+    }
+  ]
+}
+
+
+db.resturants.find().forEach((resturant)=> print("resturant name:"+resturant.name))
+resturant name:fatoosh
+resturant name:the old man & the sea
+resturant name:shwarma emil
+resturant name:teshreen 2
+
+db.resturants.find().forEach((resturant)=> print("resturant city: "+resturant.city))
+resturant city: haifa
+resturant city: jaffa
+resturant city: haifa
+resturant city: nazareth
+
+db.resturants.find().forEach((resturant)=> {print("resturant coordinates: "+resturant.coordinates)})
+resturant coordinates: -77,564,40.677
+resturant coordinates: -88,450,30
+resturant coordinates: -77,560,40
+resturant coordinates: -50,400,40
+
+
+db.resturants.find({name:/^f/})
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+
+
+db.resturants.countDocuments()
+4
+
+
+
+db.resturants.find({
+  "reviews": {
+    $elemMatch: {
+      "date": {
+        $regex: "^29.\\d{2}\\.\\d{4}$" 
+      }
+    }
+  }
+})
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    564,
+    40.677
+  ],
+  cuisine: 'middle eastern',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2023',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2023',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  city: 'jaffa',
+  coordinates: [
+    -88,
+    450,
+    30
+  ],
+  cuisine: 'mediterranean',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.10.2023',
+      rating: 4.5
+    },
+    {
+      date: '30.12.2022',
+      rating: 3.5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  city: 'haifa',
+  coordinates: [
+    -77,
+    560,
+    40
+  ],
+  cuisine: 'fast food',
+  halal: true,
+  kosher: true,
+  reviews: [
+    {
+      date: '31.12.2023',
+      rating: 5
+    },
+    {
+      date: '30.12.2023',
+      rating: 5
+    },
+    {
+      date: '29.12.2022',
+      rating: 5
+    }
+  ]
+}
+
+
