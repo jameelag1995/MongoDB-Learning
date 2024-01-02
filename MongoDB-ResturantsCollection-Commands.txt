@@ -1,26 +1,36 @@
 use findMyResturant
+
 switched to db findMyResturant
-ReferenceError: resturants is not defined
+
 db.createCollection("resturants")
 { ok: 1 }
+
 db.resturants.insertOne({name:"fatoosh",city:"haifa",coordinates:[-77,564,40.677],cuisine:"middle eastern",halal:true,kosher:false,reviews:[{date:"31.12.2023",rating:4.5},{date:"30.12.2023",rating:3.5},{date:"29.12.2023",rating:5}]})
 {
   acknowledged: true,
   insertedId: ObjectId('6593c8021f3d1ed8080bacff')
 }
+
 db.resturants.insertOne({name:"the old man & the sea",city:"jaffa",coordinates:[-88,450,30],cuisine:"mediterranean",halal:true,kosher:true,reviews:[{date:"31.10.2023",rating:4.5},{date:"30.12.2022",rating:3.5},{date:"29.12.2022",rating:5}]})
 {
   acknowledged: true,
   insertedId: ObjectId('6593c8e91f3d1ed8080bad00')
 }
+
 db.resturants.insertOne({name:"shwarma emil",city:"haifa",coordinates:[-77,560,40],cuisine:"fast food",halal:true,kosher:true,reviews:[{date:"31.12.2023",rating:5},{date:"30.12.2023",rating:5},{date:"29.12.2022",rating:5}]})
 {
   acknowledged: true,
   insertedId: ObjectId('6593c94d1f3d1ed8080bad01')
 }
+
 db.resturants.insertOne({name:"bahri",city:"umm el fahem",coordinates:[-30,300,30],cuisine:"mediterranean",halal:true,kosher:true,reviews:[{date:"20.10.2023",rating:4.5},{date:"10.9.2022",rating:3.5},{date:"12.8.2022",rating:5}]})
 {
   acknowledged: true,
   insertedId: ObjectId('6593c9d51f3d1ed8080bad02')
 }
+
 db.resturants.insertOne({name:"teshreen",city:"nazareth",coordinates:[-50,400,40],cuisine:"middle eastrn",halal:true,kosher:true,reviews:[{date:"10.10.2023",rating:4.5},{date:"15.9.2022",rating:4.5},{date:"20.8.2022",rating:5}]})
+{
+  acknowledged: true,
+  insertedId: ObjectId('6593ca281f3d1ed8080bad03')
+}
