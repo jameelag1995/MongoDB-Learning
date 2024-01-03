@@ -1226,3 +1226,50 @@ db.resturants.find({
 }
 
 
+db.resturants.aggregate([
+  {
+    $project: {
+      name: 1,
+      averageRating: { $avg: "$reviews.rating" }
+    }
+  }
+])
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  averageRating: 4.333333333333333
+}
+{
+  _id: ObjectId('6593c8e91f3d1ed8080bad00'),
+  name: 'the old man & the sea',
+  averageRating: 4.333333333333333
+}
+{
+  _id: ObjectId('6593c94d1f3d1ed8080bad01'),
+  name: 'shwarma emil',
+  averageRating: 5
+}
+{
+  _id: ObjectId('6593ca281f3d1ed8080bad03'),
+  name: 'teshreen 2',
+  averageRating: 4.375
+}
+
+db.resturants.aggregate([
+  {
+    $match: {
+      name: "fatoosh" 
+    }
+  },
+  {
+    $project: {
+      name: 1,
+      averageRating: { $avg: "$reviews.rating" }
+    }
+  }
+])
+{
+  _id: ObjectId('6593c8021f3d1ed8080bacff'),
+  name: 'fatoosh',
+  averageRating: 4.333333333333333
+}
