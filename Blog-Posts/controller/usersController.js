@@ -2,7 +2,7 @@ import { Users } from "../models/blogPostModel.js";
 
 export const getAllUsers = async (req, res) => {
     try {
-        const users = await Users.find();
+        const users = await Users.find().populate("posts");
         res.status(200).send(users);
     } catch (error) {
         res.status(500).send({ message: error.message });
