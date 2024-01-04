@@ -1,6 +1,8 @@
 import express from "express";
 import {
     createProduct,
+    deleteAllProducts,
+    deleteProductById,
     getAllActiveProducts,
     getAllProducts,
     getProductById,
@@ -22,4 +24,7 @@ router.get("/api/products/filter/price", getProductsByPrice);
 
 router.patch("/api/products/update/:id", updateProductActiveDiscount);
 
+router.delete("/api/products/:id", deleteProductById);
+
+router.delete("/api/products/delete/delete-all", deleteAllProducts);
 export default router;
