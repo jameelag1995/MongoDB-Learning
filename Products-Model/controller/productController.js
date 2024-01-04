@@ -31,4 +31,48 @@ const createProduct = async (req, res) => {
     }
 };
 
-export { getAllProducts, getProductById, createProduct };
+const getAllActiveProducts = async (req, res) => {
+    try {
+        const products = await Product.find({ isActive: true });
+        res.send(products);
+    } catch (error) {
+        res.status(500).send("error:" + error.message);
+    }
+};
+
+const getProductsByPrice = async (req, res) => {
+    try {
+        console.log("check in");
+        const { min, max } = req.query;
+        const products = await Product.find({
+            "details.price": { $gte: min, $lte: max },
+        });
+        res.send(products);
+    } catch (error) {
+        res.status(500).send("error:" + error.message);
+    }
+};
+
+const updateProductActiveDiscount = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const { isActive, discount } = req.body;
+        const product = await Product.findByIdAndUpdate(
+            { _id: id },
+            { isActive, "details.discount": discount },
+            { new: true }
+        );
+        res.send(product);
+    } catch (error) {
+        res.status(500).send("error:" + error.message);
+    }
+};
+
+export {
+    getAllProducts,
+    getProductById,
+    createProduct,
+    getAllActiveProducts,
+    getProductsByPrice,
+    updateProductActiveDiscount,
+};
